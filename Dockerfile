@@ -1,7 +1,7 @@
 # Tor 0.3.0.10
 
 FROM armhf/alpine:latest
-MAINTAINER pajdk "https://hub.docker.com/r/pajdk/rpi-tor/"
+MAINTAINER florid
 
 EXPOSE 9001 9050
 
