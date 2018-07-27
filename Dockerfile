@@ -19,9 +19,6 @@ RUN build_pkgs=" \
 
 RUN cd /tmp \
   && wget https://www.torproject.org/dist/tor-0.3.3.6.tar.gz \
-  && wget https://www.torproject.org/dist/tor-0.3.3.6.tar.gz.asc \
-  && gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 0x9E92B601 \
-  && gpg --verify tor-0.3.3.6.tar.gz.asc \
   && tar xzvf tor-0.3.3.6.tar.gz \
   && cd /tmp/tor-0.3.3.6 \
   && ./configure \
